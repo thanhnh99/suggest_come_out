@@ -1,16 +1,16 @@
 // package com.k62j.uet.suggest_come_out.util;
-
+//
 // import com.k62j.uet.suggest_come_out.dao.IDecisiveTreeConditionDAO;
 // import com.k62j.uet.suggest_come_out.models.entity.DecisiveTreeCondition;
 // import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.context.annotation.Bean;
 // import org.springframework.stereotype.Component;
-
-
+//
+//
 // import java.io.BufferedReader;
 // import java.io.FileReader;
 // import java.io.IOException;
-
+//
 // @Component
 // public class ID3Seed {
 //     @Autowired
@@ -21,10 +21,10 @@
 //         String csvFile = "D:\\Java\\SPRING\\suggest_come_out\\src\\main\\resources\\data\\weather.csv";
 //         BufferedReader br = null;
 //         BufferedReader pre_count = null;
-
+//
 //         String line = "";
 //         String cvsSplitBy = ",";
-
+//
 //         int row=0;
 //         int col=0;
 //         try {
@@ -51,9 +51,9 @@
 //                 decisiveTreeCondition.setDate(attributes[4]);
 //                 decisiveTreeCondition.setDecisive(attributes[5]);
 //                 decisiveTreeConditionDAO.save(decisiveTreeCondition);
-
+//
 //             }
-
+//
 //         }
 //         catch (IOException e) {
 //             System.out.println("File not found Exception");
