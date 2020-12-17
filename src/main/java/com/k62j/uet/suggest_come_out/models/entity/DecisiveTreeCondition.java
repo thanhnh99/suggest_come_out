@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
 @AllArgsConstructor
@@ -23,11 +22,11 @@ public class DecisiveTreeCondition extends BaseEntity{
 
     public DecisiveTreeCondition(ReqPostaDta requestData)
     {
-        this.outlook = requestData.getOutlook();
+        this.outlook = requestData.getOutlook().toLowerCase();
         this.temp = requestData.getTemp().toString();
-        this.wind = requestData.getWind();
-        this.date = requestData.getDate();
-        this.decisive = requestData.getDecisive();
+        this.wind = requestData.getWind().toUpperCase();
+        this.date = requestData.getDate().toLowerCase();
+        this.decisive = requestData.getDecisive().toLowerCase();
 
     }
 }

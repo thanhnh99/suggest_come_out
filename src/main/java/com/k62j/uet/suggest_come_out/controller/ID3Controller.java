@@ -22,8 +22,8 @@ public class ID3Controller {
                                                     @RequestParam(name = "date") @NotNull String date)
     {
         outlook = outlook.toLowerCase();
-        wind = outlook.toUpperCase();
-        date = outlook.toLowerCase();
+        wind = wind.toUpperCase();
+        date = date.toLowerCase();
         return ResponseEntity.ok().body(id3Service.decisive(outlook, temp, wind, date));
     }
 
